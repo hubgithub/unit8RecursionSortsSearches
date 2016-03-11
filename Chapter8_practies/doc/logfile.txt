@@ -1,0 +1,46 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_45\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies
+-d
+C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\aa.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\aa.java...
+Constructing Javadoc information...
+C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\aa.java:9: error: class LogSpiralPanel is public, should be declared in a file named LogSpiralPanel.java
+public class LogSpiralPanel extends JPanel
+       ^
+Standard Doclet version 1.8.0_45
+Building tree for all the packages and classes...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\LogSpiralPanel.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\package-frame.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\package-summary.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\constant-values.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\serialized-form.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\allclasses-frame.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\allclasses-noframe.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\index.html...
+Generating C:\Users\hli\Desktop\GitHub\unit8RecursionSortsSearches\Chapter8_practies\doc\stylesheet.css...
+1 warning
