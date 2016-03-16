@@ -11,10 +11,10 @@ import javax.swing.*;
 
 public class KochSnowflakeViewer implements ActionListener
 {
-    private final int WIDTH = 400;
-    private final int HEIGHT = 500;
+    private final int WIDTH = 1000;
+    private final int HEIGHT = 1000;
 
-    private final int MIN = 1, MAX = 9;
+    private final int MIN = 1, MAX = 99;
 
     private JButton increase, decrease;
     private JLabel titleLabel, orderLabel;
