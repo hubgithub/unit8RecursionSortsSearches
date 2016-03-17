@@ -8,13 +8,14 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.util.concurrent.TimeUnit;
 
 public class KochSnowflakeViewer implements ActionListener
 {
     private final int WIDTH = 1000;
     private final int HEIGHT = 1000;
 
-    private final int MIN = 1, MAX = 99;
+    private final int MIN = 1, MAX = 999;
 
     private JButton increase, decrease;
     private JLabel titleLabel, orderLabel;
@@ -25,9 +26,10 @@ public class KochSnowflakeViewer implements ActionListener
     //-----------------------------------------------------------------
     //  Sets up the components for the applet.
     //-----------------------------------------------------------------
-    public static void main(String[] args)
+    public static void main(String[] args)throws InterruptedException
     {
         KochSnowflakeViewer viewer = new KochSnowflakeViewer();
+        viewer.change_color();
     }
 
     public KochSnowflakeViewer()
@@ -47,7 +49,7 @@ public class KochSnowflakeViewer implements ActionListener
         decrease = new JButton (new ImageIcon ("decrease.gif"));
         decrease.setPressedIcon (new ImageIcon ("decreasePressed.gif"));
         decrease.setMargin (new Insets (0, 0, 0, 0));
-        decrease.addActionListener (this);
+        //decrease.addActionListener (this);
 
         orderLabel = new JLabel ("Order: 1");
         orderLabel.setForeground (Color.black);
@@ -66,7 +68,7 @@ public class KochSnowflakeViewer implements ActionListener
         panel.add (drawing);
 
         frame = new JFrame();
-        frame.setTitle("Knoch Snowflake");
+        frame.setTitle("Fractal Tree");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(WIDTH, HEIGHT);
         frame.add(panel);
@@ -91,6 +93,15 @@ public class KochSnowflakeViewer implements ActionListener
             orderLabel.setText ("Order: " + order);
             drawing.setOrder (order);
             frame.repaint();
+        }
+    }
+    
+    public void change_color()throws InterruptedException
+    {
+        while(true != false)
+        {
+            frame.repaint();
+            Thread.sleep(500);
         }
     }
 }
