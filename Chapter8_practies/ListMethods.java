@@ -40,13 +40,20 @@ public class ListMethods
    
    public static void main(String[] args)
    {
+       // Exponential growth
+       // R^2 1.0
+       // Mean squared error 1.7e+3
+       // a = 300.9849
+       // b = 0.00003
+       // c = 0.72257
+       // a + b^(c*x)
        for(int i = 1; i < 100; i ++)
        {
            long startTime = System.currentTimeMillis();
-           System.out.println(makeList(i));
+           System.out.print(makeList(i));
            long endTime = System.currentTimeMillis();
            
-           System.out.println("     " + (endTime - startTime));
+           System.out.print("     Estimated time :" + (300.9849 + Math.pow(0.00003,0.72257*i)) + "     Result Time: " +(endTime - startTime));
        }
        
 
