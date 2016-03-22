@@ -66,7 +66,7 @@ public class KochPanel extends JPanel
       }
       else
       {
-          drawFractal(x_2,y_2,angle + ANGLE+6,length-10,g2);
+          drawFractal(x_2,y_2,angle + ANGLE*Math.PI*2,length-10,g2);
           
           drawFractal(x_2,y_2,angle - ANGLE +3 ,length -5,g2);
 
