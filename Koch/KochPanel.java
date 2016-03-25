@@ -42,8 +42,10 @@ public class KochPanel extends JPanel
    //  intermediate points are computed, and each line segment is
    //  drawn as a fractal.
    //-----------------------------------------------------------------
+
    public void drawFractal (double x, double y, double angle, double length, Graphics2D g2)
    {
+      
       double ra_angle = Math.toRadians(angle);
       
       double x_2 = x - length * Math.sin(ra_angle);
@@ -64,11 +66,16 @@ public class KochPanel extends JPanel
       }
       else
       {
-          drawFractal(x_2,y_2,angle + ANGLE+6,length-10,g2);
+          drawFractal(x_2,y_2,angle + ANGLE*Math.PI*2,length-10,g2);
           
           drawFractal(x_2,y_2,angle - ANGLE +3 ,length -5,g2);
+
       }
    }
+<<<<<<< HEAD
+=======
+   
+>>>>>>> origin/master
 
    //-----------------------------------------------------------------
    //  Performs the initial calls to the drawFractal method.
