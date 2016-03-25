@@ -69,43 +69,7 @@ public class KochPanel extends JPanel
           drawFractal(x_2,y_2,angle - ANGLE +3 ,length -5,g2);
       }
    }
-   
-   public void draw_Fractal (double x, double y, double angle, double length, Graphics2D g2)throws InterruptedException
-   {
-      double ra_angle = Math.toRadians(angle);
-      
-      double x_2 = x - length * Math.sin(ra_angle);
 
-      double y_2 = y - length * Math.cos(ra_angle);
-
-      
-      
-      Line2D.Double nextline = new Line2D.Double(x,y,x_2,y_2);
-      Random rand = new Random();
-      int r = rand.nextInt(255);
-      int g = rand.nextInt(255);
-      int b = rand.nextInt(255);
-
-      g2.setColor(new Color(r,g,b));
-      g2.draw(nextline);
-
-      if(length <= 1)
-      {
-          return;
-      }
-      else
-      {
-          drawFractal(x_2,y_2,angle + ANGLE,length -5,g2);
-          
-          drawFractal(x_2,y_2,angle - ANGLE,length -5,g2);
-          
-          
-      }
-      
-      
-       
-       
-   }
    //-----------------------------------------------------------------
    //  Performs the initial calls to the drawFractal method.
    //-----------------------------------------------------------------
@@ -125,9 +89,9 @@ public class KochPanel extends JPanel
       drawFractal(500,400,-90,40,g2);
       
       
-      
-      drawFractal(637,363,0,30,g2);
-      drawFractal(361,437,180,30,g2);
+//       
+//       drawFractal(637,363,0,30,g2);
+//       drawFractal(361,437,180,30,g2);
       
 
 
